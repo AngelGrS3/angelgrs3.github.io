@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+.example {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.2em;
+}
+header {
+    background-color: #FFDE4D;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FF4C4C;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFB22C;
+}
+.flex-container {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.flex-container div {
+    background-color: darkcyan;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+.grid-container div {
+    background-color: darkgreen;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-gap {
+    gap: 20px;
+}
+
+.grid-area {
+    grid-template-areas: 
+        'header header header'
+        'sidebar content content'
+        'footer footer footer';
+}
+
+.grid-area div:nth-child(1) {
+    grid-area: header;
+}
+.grid-area div:nth-child(2) {
+    grid-area: sidebar;
+}
+.grid-area div:nth-child(3) {
+    grid-area: content;
+}
+.grid-area div:nth-child(4) {
+    grid-area: footer;
+}
+
+.grid-auto-flow {
+    grid-auto-flow: dense;
+}

@@ -1,0 +1,60 @@
+
+     :root {
+        /* https://colorhunt.co/palette/f3feb8ffde4dffb22cff4c4c */
+        --color-light: #F3FEB8;
+        --color-yellow: #FFDE4D;
+        --color-orange: #FFB22C;
+        --color-red: #FF4C4C;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: var(--color-light);
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .container {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 0 auto; 
+    }
+    
+    h1 {
+        color: var(--color-red); 
+        font-size: 1.5em;
+        margin-bottom: 15px;
+    }
+    
+    input[type="number"],
+    select {
+        width: 100%; 
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--color-yellow);
+        color: var(--color-red); 
+        font-size: 1em;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: var(--color-orange);
+    }
+    
+    .output-group {
+        margin-top: 15px;
+        font-weight: bold;
+        color: var(--color-red); 
+    }

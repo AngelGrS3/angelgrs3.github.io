@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de IMC</title>
+    <link rel="stylesheet" href="./estilos/stylesIMC.css">
+</head>
+<body>
+    <header>
+        <h1>Ing. Angel Gabriel Garcia Salazar</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./sobre-mi.html">Sobre mi</a></li>
+                <li><a href="./cliente.html">Clientes</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Calcular del IMC</h1>
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Ingrese su peso" required>
+
+        <label for="estatura">Estatura (m):</label>
+        <input type="number" step="0.01" id="estatura" placeholder="Ingrese su estatura" required>
+
+        <button id="calcularIMC">Calcular IMC</button>
+
+        <div class="output-group" id="resultado"></div>
+    </div>
+    <script src="./javascript/scriptIMC.js"></script>
+</body>
+</html>
